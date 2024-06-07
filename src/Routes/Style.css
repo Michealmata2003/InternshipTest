@@ -1,0 +1,223 @@
+.full-screen {
+    width: 100%;
+    height: 100vh;
+    margin: auto;
+    justify-content: center;
+    background-color: #ffffff;
+}
+
+.loginContainer {
+    width: 100%;
+    height: 100vh;
+    margin: auto;
+    justify-content: center;
+    background-color: #183087;
+    display: flex;
+}
+
+.forms {
+    width: 40%;
+    margin: auto;
+    justify-content: center;
+    background-color: #ffffff;
+    border-radius: 10px;
+}
+
+.profileimage {
+    width: 100%;
+    height: 80px;
+    border-radius: 50%;
+}
+
+.betweenLines {
+    display: flex;
+    flex-direction: row;
+}
+
+.betweenLines {
+    display: flex;
+    flex-direction: row;
+}
+
+.betweenLines:before,
+.betweenLines:after {
+    content: "";
+    flex: 1 1;
+    border-bottom: 1px solid;
+    margin: auto;
+}
+
+.betweenLines:before {
+    margin-right: 10px
+}
+
+.betweenLines:after {
+    margin-left: 10px
+}
+
+.topnavpic {
+    width: 40px;
+}
+
+.topnavpic img {
+    border-radius: 50%;
+}
+
+.transition-all {
+  transition-property: all;
+}
+
+.duration-300 {
+  transition-duration: 300ms;
+}
+
+.ease-in-out {
+  transition-timing-function: ease-in-out;
+}
+
+/* Container to center the range input */
+
+
+input[type=range] {
+    /* height: 38px; */
+    -webkit-appearance: none;
+    margin: 10px 0;
+    width: 100%;
+    background: transparent;
+}
+
+/*  */
+/* input[type=range]:focus { */
+/* outline: none; */
+/* } */
+
+input[type=range]::-webkit-slider-runnable-track {
+    width: 100%;
+    height: 3px;
+    cursor: pointer;
+    /* background: red; */
+    -webkit-appearance: none;
+    border-radius: 20px;
+}
+
+input[type="range"]::-webkit-slider-thumb{
+    -webkit-appearance: none;
+    width: 0;
+    box-shadow: -20rem 0 0 20rem rgba(#fff, 0.2);
+}
+input[type="range"]::-moz-range-thumb{
+    border: none;
+    width: 0;
+    box-shadow: -20rem 0 0 20rem rgba(#fff, 0.2);
+}
+
+
+.styled-range1::before {
+    content: '';
+    /* height: 8px; */
+    width: var(--value, 15%);
+    background: #ffffff;
+    position: absolute;
+    border-radius: 5px 0 0 5px;
+  }
+  
+  .styled-range1::after {
+    content: '';
+    /* height: 8px; */
+    width: calc(15% - var(--value, 60%));
+    background: #ddd;
+    position: absolute;
+    right: 0;
+    border-radius: 0 5px 5px 0;
+  }
+  
+  /* Container to control the pseudo-elements */
+  .range-container {
+    position: relative;
+    width: 100%;
+  }
+  
+  .range-container input[type="range"] {
+    position: relative;
+    border-radius: 5px 0 0 5px;
+
+    z-index: 2;
+  }
+  
+  .range-container::before,
+  .range-container::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    height: 8px;
+    /* border-radius: 5px; */
+    z-index: 1;
+  }
+  
+  .range-container::before {
+    width: var(--value, 15%);
+    background: #ffffff;
+  }
+  
+  .range-container::after {
+    width: calc(100% - var(--value, 15%));
+    background: #ddd;
+    right: 0;
+  }
+
+
+
+
+/* for the long range  */
+.range-container2 {
+    position: relative;
+    width: 100%;
+  }
+.range-container2 input[type="range"] {
+    position: relative;
+    z-index: 2;
+  }
+
+  .range-container2::before,
+  .range-container2::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    height: 8px;
+    /* border-radius: 5px; */
+    z-index: 1;
+  }
+  
+  .range-container2::before {
+    width: var(--value, 75%);
+    background: #183087;
+  }
+  
+  .range-container2::after {
+    width: calc(100% - var(--value, 75%));
+    background: #ddd;
+    right: 0;
+  }
+  .styled-range2::before {
+    content: '';
+    /* height: 8px; */
+    width: var(--value, 40%);
+    background: #183087;
+    position: absolute;
+    border-radius: 5px 0 0 5px;
+  }
+  
+  .styled-range2::after {
+    content: '';
+    /* height: 8px; */
+    width: calc(60% - var(--value, 100%));
+    background: #ddd;
+    position: absolute;
+    right: 0;
+    border-radius: 0 5px 5px 0;
+  }
+
+
+

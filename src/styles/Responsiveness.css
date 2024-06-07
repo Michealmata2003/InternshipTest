@@ -1,0 +1,31 @@
+@media (max-width:888px) {
+    .forms {
+        width: 65%;
+        margin: auto;
+        justify-content: center;
+        background-color: #ffffff;
+        border-radius: 10px;
+    }
+}
+@media (max-width:768px) {
+    .forms {
+        width: 80%;
+        margin: auto;
+        justify-content: center;
+        background-color: #ffffff;
+        border-radius: 10px;
+    }
+    .profile{
+        display: none;
+    }
+}
+
+@media (max-width:468px) {
+    .forms {
+        width: 90%;
+        margin: auto;
+        justify-content: center;
+        background-color: #ffffff;
+        border-radius: 10px;
+    }
+}
